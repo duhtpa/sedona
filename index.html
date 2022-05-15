@@ -4,32 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sedona</title>
+  <title>Sedona. Главная страница</title>
 </head>
 <body>
   <header class="page-header">
     <a href="" class="page-header__logo">
-      <img src="" alt="" class="page-header__logo-image" width="" height="">
+      <img src="" alt="" class="page-header__logo-image" width="" height=""> <!--адаптивный svg-->
     </a>
 
-    <nav class="main-nav nav">
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href=""></a>
+            <a href="">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href=""></a>
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="site-list__item nav-logo">
+            <a href="" class="nav-logo__link">
+              <img src="" alt="Логотип City of Sedona" class="nav-logo__image" width="" height="">
+            </a>
           </li>
           <li class="site-list__item">
-            <a href=""></a>
+            <a href="">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href=""></a>
-          </li>
-          <li class="site-list__item">
-            <a href=""></a>
+            <a href="">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -37,49 +39,113 @@
   </header>
 
   <main class="page-main">
-    <h1></h1>
+    <h1 class="visually-header">Седона. Туристический городок в штате Аризона</h1>
 
-    <div class="about-header">
-      <p class="about-header__title"></p>
-      <p class="about-header__subtitle"></p>
+    <div class="about section-wrapper">
+      <div class="about__header header-block">
+        <p class="header-block__title header-block__title--index"><strong>Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</strong></p>
+        <p class="header-block__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+  
+      <section class="city main-section">
+        <h2 class="visually-hidden">Описание городка</h2>
+  
+        <ul class="city__list">
+          <li class="city__item city-item city__item--header">
+            <p class="city-item__title"><strong>Настоящий <br> городок</strong></p>
+            <p class="city-item__description">— №1 — <br> Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
+          </li>
+          <li class="city__item city-item city__item--image">
+            <img src="" alt="Фото главной площади Седоны" width="" height="">
+          </li>
+          <li class="city__item city-item">
+            <p class="city-item__title"><strong>Жилье</strong></p>
+            <p class="city-item__description">Рекомендуем пожить в настоящем мотеле, <br> все как в кино!</p>
+          </li>
+          <li class="city__item city-item">
+            <p class="city-item__title"><strong>Еда</strong></p>
+            <p class="city-item__description">Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
+          </li>
+          <li class="city__item city-item">
+            <p class="city-item__title"><strong>Сувениры</strong></p>
+            <p class="city-item__description">Не только китайского, <br> но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+  
+      <section class="locale main-section">
+        <h2 class="visually-hidden">Описание местности</h2>
+  
+        <ul class="locale__list">
+          <li class="locale__item locale-item locale__item--header">
+            <p class="locale-item__title"><strong>Там есть <br> мост дьявола</strong></p>
+            <p class="locale-item__description">— №2 — <br> Да, по нему можно пройти! <br> Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="locale__item locale-item locale__item--image">
+            <img src="" alt="Фото Моста дьявола" width="" height="">
+          </li>
+          <li class="locale__item locale-item">
+            <p class="locale-item__title"><strong>Небольшая <br> площадь</strong></p>
+            <p class="locale-item__description">— №3 — <br> Все интересные места находятся очень <br> близко</p>
+          </li>
+          <li class="locale__item locale-item">
+            <p class="locale-item__title"><strong>Красивая <br> дорога</strong></p>
+            <p class="locale-item__description">— №4 — <br> Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
+          </li>
+          <li class="locale__item locale-item">
+            <p class="locale-item__title"><strong>Мало <br> туристов</strong></p>
+            <p class="locale-item__description">— №5 — <br> Большинство едет в гранд каньон <br> и толпится там</p>
+          </li>
+        </ul>
+      </section>
     </div>
 
-    <!-- ПЕРЕОСМЫСЛИТЬ!!! 
-      СКОРЕЕ ВСЕГО ЛУЧЬШЕ СДЕЛАТЬ 4 ПОСЛЕДУЮЩИЕ СТРОКИ КАК 2 СЕКЦИИ ПО 2 СТРОКИ. 
-      ВНУТРИ ПРОСТО UL-СПИСКИ. КАРТИНКИ - ЧЕРЕЗ FLEX-GROW: 2 ИЛИ ХАРДКОРНО WIDTH
-    1ЫЕ ЭЛЕМЕНТЫ СПИСКОВ БУДУТ С ЗАЛИВКОЙ И БЕЛЫМ ЦВЕТОМ ТЕКСТА-->
+    <section class="offer main-section">
+      <h2 class="visually-hidden">Поиск гостиницы</h2>
+      <p class="offer__title"><strong>Заинтересовались?</strong></p>
+      <p class="offer__subtitle">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-    <section class="city">
-      <h2 class="city__header"></h2>
-
-      <ul class="main-section__list city__list">  <!-- main-section__list -->
-        <li class="city__item city__item--header"></li>
-        <li class="city__item city__item--image">
-          <img src="" alt="">
-        </li>
-        <li class="city__item"></li>
-        <li class="city__item"></li>
-        <li class="city__item"></li>
-      </ul>
+      <a href="" class="offer__btn">Найти гостиницу</a> <!--переход на отдельную страницу-->
     </section>
 
-    <section class="advantages">
-      <h2 class="advantages__header"></h2>
+    <section class="map">
+      <h2 class="visually-hidden">Расположение Седоны</h2>
 
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--header"></li>
-        <li class="advantages__item advantages__item--image">
-          <img src="" alt="">
-        </li>
-        <li class="advantages__item"></li>
-        <li class="advantages__item"></li>
-        <li class="advantages__item"></li>
-      </ul>
+      <div class="map__wrapper">
+        <img class="map__image" src="" alt="780 Chapel Road, Седона, штат Аризона" width="" height="">
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
+    <p class="heshtag">#visitsedona</p>
 
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="" alt="Twitter" width="" height="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="" alt="Facebook" width="" height="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="" alt="Youtube" width="" height="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="page-footer__copyright copyright">
+      <a href="" class="copyright__link">
+        <span>Разработано</span>
+        <img src="" alt="HTML Academy" class="copyright__image" width="" height="">
+      </a>
+    </p>
   </footer>
 </body>
 </html>

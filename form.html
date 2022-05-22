@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a href="" class="page-header__logo">
-      <img src="" alt="" class="page-header__logo-image" width="" height="">
+      <img src="" alt="" class="page-header__logo-image" width="" height=""> <!--адаптивный svg-->
     </a>
 
     <nav class="main-nav">
@@ -17,19 +17,21 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href=""></a>
+            <a href="">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href=""></a>
+            <a href="">Фото и видео</a>
+          </li>
+          <li class="site-list__item nav-logo">
+            <a href="" class="nav-logo__link">
+              <img src="" alt="Логотип City of Sedona" class="nav-logo__image" width="" height="">
+            </a>
           </li>
           <li class="site-list__item">
-            <a href=""></a>
+            <a href="">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href=""></a>
-          </li>
-          <li class="site-list__item">
-            <a href=""></a>
+            <a href="">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -37,7 +39,7 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden"></h1>
+    <h1 class="visually-hidden">Седона. Туристический городок в штате Аризона</h1>
 
     <div class="feedback section-wrapper">
       <div class="feedback__header header-block">
@@ -49,63 +51,80 @@
         <fieldset>
           <legend>Ваше Общее впечатление:</legend>
           <ul>
-            <li><label for=""></label><input type="radio" value="" name="" id=""></li>
-            <li><label for=""></label><input type="radio" value="" name="" id=""></li>
-            <li><label for=""></label><input type="radio" value="" name="" id=""></li>
+            <li><label for="">Скорее положительное</label><input type="radio" value="" name="" id="" checked></li>
+            <li><label for="">Скорее отрицательное</label><input type="radio" value="" name="" id=""></li>
+            <li><label for="">Затрудняюсь ответить</label><input type="radio" value="" name="" id=""></li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Представьтесь:</legend>
           <ul>
-            <li><label for=""></label><input type="text" placeholder="" id=""></li>
-            <li><label for=""></label><input type="text" placeholder="" id=""></li>
-            <li><label for=""></label><input type="text" placeholder="" id=""></li>
+            <li><label for="">Имя*:</label><input type="text" placeholder="Петр" id="" required></li>
+            <li><label for="">Фамилия*:</label><input type="text" placeholder="Иванов" id="" required></li>
+            <li><label for="">Отчество:</label><input type="text" placeholder="Александрович" id=""></li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Контактная информация:</legend>
           <ul>
-            <li><label for=""></label><input type="tel" placeholder="" id=""></li>
-            <li><label for=""></label><input type="email" placeholder="" id=""></li>
+            <li><label for="">Телефон*:</label><input type="tel" placeholder="Введите телефон" id="" required></li>
+            <li><label for="">Электронная почта*:</label><input type="email" placeholder="Введите e-mail" id="" required></li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Посещенные <br> достопримечательности:</legend>
           <ul>
-            <li><label for=""></label><input type="checkbox" name="" id="" checked></li>
-            <li><label for=""></label><input type="checkbox" name="" id="" checked></li>
-            <li><label for=""></label><input type="checkbox" name="" id="" checked></li>
-            <li><label for=""></label><input type="checkbox" name="" id=""></li>
+            <li><label for="">Мост Дьявола</label><input type="checkbox" name="" id="" checked></li>
+            <li><label for="">Гора-Колокол</label><input type="checkbox" name="" id="" checked></li>
+            <li><label for="">Слайд-парк</label><input type="checkbox" name="" id="" checked></li>
+            <li><label for="">Красные скалы</label><input type="checkbox" name="" id=""></li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Опишите свои эмоции:</legend>
           <ul>
-            <li><label for=""></label><textarea name="" id="" cols="30" rows="10" placeholder=""></textarea></li>
+            <li><label for=""></label><textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea></li>
           </ul>
         </fieldset>
 
-        <button type="submit"></button>
+        <button type="submit">Отправить отзыв</button>
 
         <small> <!--уместно ли пихать ЭТО в форму???-->
-          <sup>*</sup> — обязательные поля
+          <sup>*</sup> — Обязательные поля
         </small>
       </form>
     </div>
   </main>
 
   <footer class="page-footer">
-    <p class="heshtag"></p>
+    <p class="heshtag">#visitsedona</p>
 
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li><a href="" class="social__item"></a></li>
-        <li><a href="" class="social__item"></a></li>
-        <li><a href="" class="social__item"></a></li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="" alt="Twitter" width="" height="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="" alt="Facebook" width="" height="">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="" class="social__link">
+            <img src="" alt="Youtube" width="" height="">
+          </a>
+        </li>
       </ul>
     </div>
 
-    <p class="page-footer__copyright copyright"></p>
+    <p class="page-footer__copyright copyright">
+      <a href="" class="copyright__link">
+        <span>Разработано</span>
+        <img src="" alt="HTML Academy" class="copyright__image" width="" height="">
+      </a>
+    </p>
   </footer>
 </body>
 </html>
